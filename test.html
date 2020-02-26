@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href>
+  <title data-ice="title">Test | Hyperwallet REST SDK</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A library to manage users, transfer methods and payments through the Hyperwallet API"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Hyperwallet REST SDK"><meta property="twitter:description" content="A library to manage users, transfer methods and payments through the Hyperwallet API"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/hyperwallet/node-sdk"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html">Hyperwallet</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/ApiClient.js~ApiClient.html">ApiClient</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/utils/Encryption.js~Encryption.html">Encryption</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-api-callback">api-callback</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Test</h1>
+<table class="test-summary">
+  <thead>
+    <tr>
+      <td class="test-description">Description</td>
+      <td class="test-target">Identifier</td>
+    </tr>
+  </thead>
+
+  <tbody data-ice="tests"><tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber13"><p>Hyperwallet</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html">Hyperwallet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber15"><p>constructor()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber17"><p>should initialize ApiClient with default server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber29"><p>should set programToken to undefined if not provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber39"><p>should set programToken if provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber50"><p>should initialize ApiClient with provided server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber61"><p>should throw error if username is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber68"><p>should throw error if password is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber75"><p>should throw error if username and password is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-constructor-constructor">Hyperwallet#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber85"><p>listUsers()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber86"><p>should not have any TLS issues</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber103"><p>createUser()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createUser">Hyperwallet#createUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber119"><p>should do post call to users endpoint without programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createUser">Hyperwallet#createUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber132"><p>should do post call to users endpoint with programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createUser">Hyperwallet#createUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber149"><p>getUser()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUser">Hyperwallet#getUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber165"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUser">Hyperwallet#getUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber171"><p>should do get call if userToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUser">Hyperwallet#getUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber181"><p>updateUser()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateUser">Hyperwallet#updateUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber197"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateUser">Hyperwallet#updateUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber203"><p>should do put call to users endpoint without programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateUser">Hyperwallet#updateUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber216"><p>should do put call to users endpoint with programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateUser">Hyperwallet#updateUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber233"><p>listUsers()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUsers">Hyperwallet#listUsers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber249"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUsers">Hyperwallet#listUsers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber258"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUsers">Hyperwallet#listUsers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber267"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUsers">Hyperwallet#listUsers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber288"><p>getUserStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUserStatusTransition">Hyperwallet#getUserStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber304"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUserStatusTransition">Hyperwallet#getUserStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber310"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUserStatusTransition">Hyperwallet#getUserStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber316"><p>should do get call if userToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getUserStatusTransition">Hyperwallet#getUserStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber326"><p>listUserStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUserStatusTransitions">Hyperwallet#listUserStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber342"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUserStatusTransitions">Hyperwallet#listUserStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber348"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUserStatusTransitions">Hyperwallet#listUserStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber357"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUserStatusTransitions">Hyperwallet#listUserStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber366"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listUserStatusTransitions">Hyperwallet#listUserStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber391"><p>createBankCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCard">Hyperwallet#createBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber407"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCard">Hyperwallet#createBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber413"><p>should do post call to bank cards endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCard">Hyperwallet#createBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber427"><p>getBankCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCard">Hyperwallet#getBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber443"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCard">Hyperwallet#getBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber449"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCard">Hyperwallet#getBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber455"><p>should do get call if userToken and bankCardToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCard">Hyperwallet#getBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber465"><p>updateBankCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankCard">Hyperwallet#updateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber481"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankCard">Hyperwallet#updateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber487"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankCard">Hyperwallet#updateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber493"><p>should do put call to bank cards endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankCard">Hyperwallet#updateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber507"><p>listBankCards()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCards">Hyperwallet#listBankCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber523"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCards">Hyperwallet#listBankCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber529"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCards">Hyperwallet#listBankCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber538"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCards">Hyperwallet#listBankCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber547"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCards">Hyperwallet#listBankCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber568"><p>deactivate()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankCard">Hyperwallet#deactivateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber586"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankCard">Hyperwallet#deactivateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber594"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankCard">Hyperwallet#deactivateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber602"><p>should send transition to &apos;DE_ACTIVATED&apos;</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankCard">Hyperwallet#deactivateBankCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber614"><p>createBankCardStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCardStatusTransition">Hyperwallet#createBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber630"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCardStatusTransition">Hyperwallet#createBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber636"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCardStatusTransition">Hyperwallet#createBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber642"><p>should send post call to bank card status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankCardStatusTransition">Hyperwallet#createBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber654"><p>getBankCardStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCardStatusTransition">Hyperwallet#getBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber670"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCardStatusTransition">Hyperwallet#getBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber676"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCardStatusTransition">Hyperwallet#getBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber682"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCardStatusTransition">Hyperwallet#getBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber688"><p>should do get call if userToken, bankCardToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankCardStatusTransition">Hyperwallet#getBankCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber698"><p>listBankCardStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber714"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber720"><p>should throw error if bankCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber726"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber735"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber744"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankCardStatusTransitions">Hyperwallet#listBankCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber769"><p>getAuthenticationToken()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getAuthenticationToken">Hyperwallet#getAuthenticationToken</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber785"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getAuthenticationToken">Hyperwallet#getAuthenticationToken</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber791"><p>should do post call to authentication token endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getAuthenticationToken">Hyperwallet#getAuthenticationToken</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber805"><p>createPaperCheck()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheck">Hyperwallet#createPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber821"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheck">Hyperwallet#createPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber827"><p>should do post call to paper checks endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheck">Hyperwallet#createPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber841"><p>getPaperCheck()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheck">Hyperwallet#getPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber857"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheck">Hyperwallet#getPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber863"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheck">Hyperwallet#getPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber869"><p>should do get call if userToken and paperCheckToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheck">Hyperwallet#getPaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber879"><p>updatePaperCheck()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePaperCheck">Hyperwallet#updatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber895"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePaperCheck">Hyperwallet#updatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber901"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePaperCheck">Hyperwallet#updatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber907"><p>should do put call to paper checks endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePaperCheck">Hyperwallet#updatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber921"><p>listPaperChecks()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperChecks">Hyperwallet#listPaperChecks</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber937"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperChecks">Hyperwallet#listPaperChecks</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber943"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperChecks">Hyperwallet#listPaperChecks</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber952"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperChecks">Hyperwallet#listPaperChecks</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber961"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperChecks">Hyperwallet#listPaperChecks</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber982"><p>deactivate()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePaperCheck">Hyperwallet#deactivatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1000"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePaperCheck">Hyperwallet#deactivatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1008"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePaperCheck">Hyperwallet#deactivatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1016"><p>should send transition to &apos;DE_ACTIVATED&apos;</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePaperCheck">Hyperwallet#deactivatePaperCheck</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1028"><p>createPaperCheckStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheckStatusTransition">Hyperwallet#createPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1044"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheckStatusTransition">Hyperwallet#createPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1050"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheckStatusTransition">Hyperwallet#createPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1056"><p>should send post call to paper check status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaperCheckStatusTransition">Hyperwallet#createPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1068"><p>getPaperCheckStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheckStatusTransition">Hyperwallet#getPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1084"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheckStatusTransition">Hyperwallet#getPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1090"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheckStatusTransition">Hyperwallet#getPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1096"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheckStatusTransition">Hyperwallet#getPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1102"><p>should do get call if userToken, paperCheckToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaperCheckStatusTransition">Hyperwallet#getPaperCheckStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1112"><p>listPaperCheckStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1128"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1134"><p>should throw error if paperCheckToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1140"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1149"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1158"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaperCheckStatusTransitions">Hyperwallet#listPaperCheckStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1183"><p>createTransfer()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransfer">Hyperwallet#createTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1199"><p>should throw error if sourceToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransfer">Hyperwallet#createTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1207"><p>should throw error if destinationToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransfer">Hyperwallet#createTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1215"><p>should throw error if clientTransferId is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransfer">Hyperwallet#createTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1224"><p>should do post call to transfers endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransfer">Hyperwallet#createTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1242"><p>getTransfer()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransfer">Hyperwallet#getTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1258"><p>should throw error if transferToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransfer">Hyperwallet#getTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1264"><p>should do get call if transferToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransfer">Hyperwallet#getTransfer</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1274"><p>listTransfers()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransfers">Hyperwallet#listTransfers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1290"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransfers">Hyperwallet#listTransfers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1299"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransfers">Hyperwallet#listTransfers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1308"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransfers">Hyperwallet#listTransfers</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1329"><p>createTransferStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferStatusTransition">Hyperwallet#createTransferStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1345"><p>should throw error if transferToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferStatusTransition">Hyperwallet#createTransferStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1351"><p>should send post call to transfer status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferStatusTransition">Hyperwallet#createTransferStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1367"><p>createPayPalAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1383"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1389"><p>should throw error if transferMethodCountry is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1395"><p>should throw error if transferMethodCurrency is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1403"><p>should throw error if email is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1412"><p>should do post call to PayPal account endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccount">Hyperwallet#createPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1430"><p>getPayPalAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayPalAccount">Hyperwallet#getPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1446"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayPalAccount">Hyperwallet#getPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1452"><p>should throw error if payPalAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayPalAccount">Hyperwallet#getPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1458"><p>should do get call if userToken and payPalAccountToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayPalAccount">Hyperwallet#getPayPalAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1468"><p>listPayPalAccounts()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayPalAccounts">Hyperwallet#listPayPalAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1484"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayPalAccounts">Hyperwallet#listPayPalAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1490"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayPalAccounts">Hyperwallet#listPayPalAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1499"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayPalAccounts">Hyperwallet#listPayPalAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1508"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayPalAccounts">Hyperwallet#listPayPalAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1529"><p>createPayPalAccountStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccountStatusTransition">Hyperwallet#createPayPalAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1545"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccountStatusTransition">Hyperwallet#createPayPalAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1551"><p>should throw error if payPalAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccountStatusTransition">Hyperwallet#createPayPalAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1557"><p>should send post call to paypal account status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayPalAccountStatusTransition">Hyperwallet#createPayPalAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1573"><p>createPrepaidCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCard">Hyperwallet#createPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1589"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCard">Hyperwallet#createPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1595"><p>should do post call to prepaid cards endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCard">Hyperwallet#createPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1609"><p>getPrepaidCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCard">Hyperwallet#getPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1625"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCard">Hyperwallet#getPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1631"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCard">Hyperwallet#getPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1637"><p>should do get call if userToken and prepaidCardToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCard">Hyperwallet#getPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1647"><p>updatePrepaidCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePrepaidCard">Hyperwallet#updatePrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1663"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePrepaidCard">Hyperwallet#updatePrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1669"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePrepaidCard">Hyperwallet#updatePrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1675"><p>should do put call to prepaid cards endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updatePrepaidCard">Hyperwallet#updatePrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1689"><p>listPrepaidCards()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCards">Hyperwallet#listPrepaidCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1705"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCards">Hyperwallet#listPrepaidCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1711"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCards">Hyperwallet#listPrepaidCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1720"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCards">Hyperwallet#listPrepaidCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1729"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCards">Hyperwallet#listPrepaidCards</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1760">test/Hyperwallet.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1783"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-suspendPrepaidCard">Hyperwallet#suspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unsuspendPrepaidCard">Hyperwallet#unsuspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lostOrStolenPrepaidCard">Hyperwallet#lostOrStolenPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePrepaidCard">Hyperwallet#deactivatePrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lockPrepaidCard">Hyperwallet#lockPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unlockPrepaidCard">Hyperwallet#unlockPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1796"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-suspendPrepaidCard">Hyperwallet#suspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unsuspendPrepaidCard">Hyperwallet#unsuspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lostOrStolenPrepaidCard">Hyperwallet#lostOrStolenPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePrepaidCard">Hyperwallet#deactivatePrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lockPrepaidCard">Hyperwallet#lockPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unlockPrepaidCard">Hyperwallet#unlockPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1809">test/Hyperwallet.spec.js</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-suspendPrepaidCard">Hyperwallet#suspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unsuspendPrepaidCard">Hyperwallet#unsuspendPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lostOrStolenPrepaidCard">Hyperwallet#lostOrStolenPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivatePrepaidCard">Hyperwallet#deactivatePrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-lockPrepaidCard">Hyperwallet#lockPrepaidCard</a></span>
+<span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-unlockPrepaidCard">Hyperwallet#unlockPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1822"><p>createPrepaidCardStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCardStatusTransition">Hyperwallet#createPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1838"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCardStatusTransition">Hyperwallet#createPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1844"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCardStatusTransition">Hyperwallet#createPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1850"><p>should send post call to prepaid card status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPrepaidCardStatusTransition">Hyperwallet#createPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1862"><p>getPrepaidCardStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCardStatusTransition">Hyperwallet#getPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1878"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCardStatusTransition">Hyperwallet#getPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1884"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCardStatusTransition">Hyperwallet#getPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1890"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCardStatusTransition">Hyperwallet#getPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1896"><p>should do get call if userToken, prepaidCardToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPrepaidCardStatusTransition">Hyperwallet#getPrepaidCardStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1906"><p>listPrepaidCardStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1922"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1928"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1934"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1943"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1952"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPrepaidCardStatusTransitions">Hyperwallet#listPrepaidCardStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1977"><p>createBankAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccount">Hyperwallet#createBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1993"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccount">Hyperwallet#createBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber1999"><p>should do post call to bank accounts endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccount">Hyperwallet#createBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2013"><p>getBankAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccount">Hyperwallet#getBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2029"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccount">Hyperwallet#getBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2035"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccount">Hyperwallet#getBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2041"><p>should do get call if userToken and bankAccountToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccount">Hyperwallet#getBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2051"><p>updateBankAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankAccount">Hyperwallet#updateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2067"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankAccount">Hyperwallet#updateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2073"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankAccount">Hyperwallet#updateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2079"><p>should do put call to bank accounts endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-updateBankAccount">Hyperwallet#updateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2093"><p>listBankAccounts()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccounts">Hyperwallet#listBankAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2109"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccounts">Hyperwallet#listBankAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2115"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccounts">Hyperwallet#listBankAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2124"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccounts">Hyperwallet#listBankAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2133"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccounts">Hyperwallet#listBankAccounts</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2154"><p>deactivateBankAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankAccount">Hyperwallet#deactivateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2170"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankAccount">Hyperwallet#deactivateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2176"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankAccount">Hyperwallet#deactivateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2182"><p>should send transition to &apos;DE-ACTIVATED&apos;</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-deactivateBankAccount">Hyperwallet#deactivateBankAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2194"><p>createBankAccountStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccountStatusTransition">Hyperwallet#createBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2210"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccountStatusTransition">Hyperwallet#createBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2216"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccountStatusTransition">Hyperwallet#createBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2222"><p>should send post call to prepaid card status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createBankAccountStatusTransition">Hyperwallet#createBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2234"><p>getBankAccountStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccountStatusTransition">Hyperwallet#getBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2250"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccountStatusTransition">Hyperwallet#getBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2256"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccountStatusTransition">Hyperwallet#getBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2262"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccountStatusTransition">Hyperwallet#getBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2268"><p>should do get call if userToken, bankAccountToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getBankAccountStatusTransition">Hyperwallet#getBankAccountStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2278"><p>listBankAccountStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2294"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2300"><p>should throw error if bankAccountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2306"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2315"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2324"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBankAccountStatusTransitions">Hyperwallet#listBankAccountStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2349"><p>listBalancesForUser()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForUser">Hyperwallet#listBalancesForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2365"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForUser">Hyperwallet#listBalancesForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2371"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForUser">Hyperwallet#listBalancesForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2380"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForUser">Hyperwallet#listBalancesForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2389"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForUser">Hyperwallet#listBalancesForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2410"><p>listBalancesForPrepaidCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2426"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2432"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2438"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2447"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2456"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForPrepaidCard">Hyperwallet#listBalancesForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2477"><p>listBalancesForAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2493"><p>should throw error if programToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2499"><p>should throw error if accountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2505"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2514"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2523"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listBalancesForAccount">Hyperwallet#listBalancesForAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2548"><p>createPayment()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayment">Hyperwallet#createPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2564"><p>should do post call to payments endpoint without programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayment">Hyperwallet#createPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2577"><p>should do post call to payments endpoint with programToken added</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPayment">Hyperwallet#createPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2594"><p>getPayment()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayment">Hyperwallet#getPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2610"><p>should throw error if paymentToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayment">Hyperwallet#getPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2616"><p>should do get call if paymentToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPayment">Hyperwallet#getPayment</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2626"><p>listPayments()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayments">Hyperwallet#listPayments</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2642"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayments">Hyperwallet#listPayments</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2651"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayments">Hyperwallet#listPayments</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2660"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPayments">Hyperwallet#listPayments</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2681"><p>createPaymentStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaymentStatusTransition">Hyperwallet#createPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2697"><p>should throw error if paymentToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaymentStatusTransition">Hyperwallet#createPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2703"><p>should send post call to payment status transition endpoint</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createPaymentStatusTransition">Hyperwallet#createPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2715"><p>getPaymentStatusTransition()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaymentStatusTransition">Hyperwallet#getPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2731"><p>should throw error if paymentToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaymentStatusTransition">Hyperwallet#getPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2737"><p>should throw error if statusTransitionToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaymentStatusTransition">Hyperwallet#getPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2743"><p>should do get call if paymentToken and statusTransitionToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getPaymentStatusTransition">Hyperwallet#getPaymentStatusTransition</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2753"><p>listPaymentStatusTransitions()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaymentStatusTransitions">Hyperwallet#listPaymentStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2769"><p>should throw error if paymentToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaymentStatusTransitions">Hyperwallet#listPaymentStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2775"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaymentStatusTransitions">Hyperwallet#listPaymentStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2784"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaymentStatusTransitions">Hyperwallet#listPaymentStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2793"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listPaymentStatusTransitions">Hyperwallet#listPaymentStatusTransitions</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2818"><p>getProgram()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgram">Hyperwallet#getProgram</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2834"><p>should throw error if programToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgram">Hyperwallet#getProgram</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2840"><p>should do get call if programToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgram">Hyperwallet#getProgram</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2854"><p>getProgramAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgramAccount">Hyperwallet#getProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2870"><p>should throw error if programToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgramAccount">Hyperwallet#getProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2876"><p>should throw error if accountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgramAccount">Hyperwallet#getProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2882"><p>should do get call if programToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getProgramAccount">Hyperwallet#getProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2896"><p>getTransferMethodConfiguration()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2912"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2918"><p>should throw error if country is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2924"><p>should throw error if currency is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2930"><p>should throw error if type is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2936"><p>should throw error if profileType is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2942"><p>should do get call if userToken, country, currency, type and profileType is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getTransferMethodConfiguration">Hyperwallet#getTransferMethodConfiguration</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2958"><p>listTransferMethodConfigurations()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransferMethodConfigurations">Hyperwallet#listTransferMethodConfigurations</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2974"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransferMethodConfigurations">Hyperwallet#listTransferMethodConfigurations</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2980"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransferMethodConfigurations">Hyperwallet#listTransferMethodConfigurations</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber2992"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransferMethodConfigurations">Hyperwallet#listTransferMethodConfigurations</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3003"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listTransferMethodConfigurations">Hyperwallet#listTransferMethodConfigurations</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3025"><p>createTransferMethod()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3041"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferMethod">Hyperwallet#createTransferMethod</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3050"><p>should throw error if cacheToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferMethod">Hyperwallet#createTransferMethod</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3059"><p>should do post call with userToken and cacheToken</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-createTransferMethod">Hyperwallet#createTransferMethod</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3075"><p>listReceiptsForProgramAccount()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3091"><p>should throw error if programToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3097"><p>should throw error if accountToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3103"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3112"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3121"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForProgramAccount">Hyperwallet#listReceiptsForProgramAccount</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3142"><p>listReceiptsForUser()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForUser">Hyperwallet#listReceiptsForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3158"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForUser">Hyperwallet#listReceiptsForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3164"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForUser">Hyperwallet#listReceiptsForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3173"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForUser">Hyperwallet#listReceiptsForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3182"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForUser">Hyperwallet#listReceiptsForUser</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3203"><p>listReceiptsForPrepaidCard()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3219"><p>should throw error if userToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3225"><p>should throw error if prepaidCardToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3231"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3240"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3249"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listReceiptsForPrepaidCard">Hyperwallet#listReceiptsForPrepaidCard</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3273"><p>listWebhookNotifications()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3289"><p>should do get call with options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listWebhookNotifications">Hyperwallet#listWebhookNotifications</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3298"><p>should do get call without options</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listWebhookNotifications">Hyperwallet#listWebhookNotifications</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3307"><p>should handle 204 return</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-listWebhookNotifications">Hyperwallet#listWebhookNotifications</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3327"><p>getWebhookNotification</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3343"><p>should throw error if webhookToken is missing</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getWebhookNotification">Hyperwallet#getWebhookNotification</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3349"><p>should do get call if webhookToken is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/Hyperwallet.js~Hyperwallet.html#instance-method-getWebhookNotification">Hyperwallet#getWebhookNotification</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3362"><p>addProgramToken()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3363"><p>should do nothing if no data is provided</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3372"><p>should do nothing if no programToken is set</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3381"><p>should do nothing if programToken is set in data</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3391"><p>should add programToken if no programToken is set in data</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3402"><p>handle204Response()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3403"><p>should return a &apos;function&apos; with a argument</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3407"><p>should do nothing for errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3426"><p>should do nothing for non 204 responses</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/Hyperwallet.spec.js.html#lineNumber3445"><p>should return empty list for 204 responses</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber15"><p>utils/ApiClient</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html">ApiClient</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber17"><p>constructor()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-constructor-constructor">ApiClient#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber19"><p>should set provided values as private members</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-constructor-constructor">ApiClient#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber28"><p>should set the version to package.json version</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-constructor-constructor">ApiClient#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber35"><p>doPost()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber56"><p>should return response if call was successful (with query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber82"><p>should return response if call was successful (with query parameters) when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber110"><p>should return response if call was successful (with query parameters) when content type contains charset ahead</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber138"><p>should return response if call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber163"><p>should return generic network error if no response was send by server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber178"><p>should return error message if responses contains error</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber220"><p>should return encrypted response if encrypted POST call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber259"><p>should return encrypted response if encrypted POST call was successful when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber298"><p>should return error when encrypted response body is empty</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber335"><p>should return error when fail to encrypt POST request body</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPost">ApiClient#doPost</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber371"><p>doPut()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber392"><p>should return response if call was successful (with query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber418"><p>should return response if call was successful (with query parameters) when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber446"><p>should return response if call was successful (with query parameters) when content type contains charset ahead</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber474"><p>should return response if call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber499"><p>should return generic network error if no response was send by server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber514"><p>should return error message if responses contains error</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber556"><p>should return encrypted response if encrypted PUT call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber593"><p>should return encrypted response if encrypted PUT call was successful when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber632"><p>should return error when fail to encrypt PUT request body</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber667"><p>should return error when fail to decrypt PUT response body</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber702"><p>should return error when server responses with error on encrypted PUT request</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doPut">ApiClient#doPut</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber756"><p>doGet()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber777"><p>should return response if call was successful (with query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber800"><p>should return response if call was successful (with query parameters) when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber825"><p>should return response if call was successful (with query parameters) when content type contains charset ahead</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber850"><p>should return response if call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber872"><p>should return generic network error if no response was send by server</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber887"><p>should return error message if responses contains error</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber926"><p>should return encrypted response if encrypted GET call was successful (without query parameters)</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber962"><p>should return encrypted response if encrypted GET call was successful when content type contains charset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/ApiClient.js~ApiClient.html#instance-method-doGet">ApiClient#doGet</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1000"><p>wrapCallback()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1001"><p>should return a &apos;function&apos; without a argument</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1007"><p>should return a &apos;function&apos; with a argument</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1013"><p>should be able to run without any arguments</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1018"><p>should call callback with &apos;body&apos; and &apos;res&apos; if no error happened</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1038"><p>should call callback with &apos;errors&apos;, &apos;body&apos; and &apos;res&apos; if &apos;body&apos; contains errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1076"><p>should call callback with static error message as &apos;errors&apos;, &apos;body&apos; and &apos;res&apos; if &apos;body&apos; contains no errors</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1098"><p>should call callback with &apos;body&apos; and &apos;res&apos; and application/jose+json Content-Type</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1128"><p>should call callback with static error message as &apos;errors&apos;, when Content-Type is wrong</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/ApiClient.spec.js.html#lineNumber1151"><p>should call callback with no errors if Content-type is missing and response is noContent</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target">-</td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="0">
+  <td data-ice="testDescription" style="padding-left: 10px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber7"><p>utils/Encryption</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html">Encryption</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber9"><p>constructor()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-constructor-constructor">Encryption#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber11"><p>should set default values for encryption properties</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-constructor-constructor">Encryption#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber23"><p>should set encryption properties by constructor</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-constructor-constructor">Encryption#constructor</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber37"><p>encrypt()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber53"><p>should successfully encrypt and decrypt text message</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber63"><p>should successfully decode and encode encrypted text message</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber73"><p>should throw exception when wrong jwk key set location is given</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber83"><p>should throw exception when wrong jwk key is set for encryption</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber93"><p>should throw exception when signing body with key algorithm that doesn&apos;t present in jwkset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber103"><p>should throw exception when signing body with wrong jwk key</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber113"><p>should throw exception when jwk keyset file is invalid</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber123"><p>should throw exception when jwk keyset file location is wrong</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber133"><p>should successfully encrypt and decrypt text message with url keyset path</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber152"><p>should throw exception when not supported encryption algorithm is given</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-encrypt">Encryption#encrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="1">
+  <td data-ice="testDescription" style="padding-left: 20px"><span data-ice="testInterfaceToggle" class="toggle closed"></span><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber163"><p>decrypt()</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber183"><p>should fail decryption when wrong private key is used</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber195"><p>should fail decryption when sign algorithm is not found in keyset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber207"><p>should fail decryption when algorithm is not found in jwkset</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber219"><p>should fail signature verification when wrong public key is used</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+
+<tr class="test-interface" data-ice="testInterface" style="display: none;" data-test-depth="2">
+  <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/utils/Encryption.spec.js.html#lineNumber231"><p>should throw exception when jws signature has expired</p>
+</a></span></td>
+  <td data-ice="testTarget" class="test-target"><span><a href="class/src/utils/Encryption.js~Encryption.html#instance-method-decrypt">Encryption#decrypt</a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
